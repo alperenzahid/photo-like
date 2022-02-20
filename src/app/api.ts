@@ -2,7 +2,8 @@ import {createApi} from "unsplash-js";
 import Photo from "./entities/Photo";
 
 const api = createApi({
-    accessKey: `${process.env.REACT_APP_UNSPLASH}` //'nSAJkcgtQrq5rvFXownMZ7_q6Ti2uEpVmbxB-LN_9xw',//Take from ENV Variables
+    accessKey: `${process.env.REACT_APP_UNSPLASH}` //run app as
+    //REACT_APP_UNSPLASH=nSAJkcgtQrq5rvFXownMZ7_q6Ti2uEpVmbxB-LN_9xw npm start
 });
 
 export async function getRandomPhoto(): Promise<Photo|null> {

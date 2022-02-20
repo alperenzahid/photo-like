@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import HeaderText from "../HeaderText";
 import PhotoList from "../list-photos/photoList";
+import PhotoApprove from "../approve-photo/photoApprove";
 import Border from "../view/Border";
 
 const Outer = styled.div`
@@ -9,13 +10,13 @@ const Outer = styled.div`
   font-size: 0.5rem;
   text-align: left;
 `
-
 export default function Main(){
     return (
         <Outer>
             <HeaderText text={"Image Approval Application"}/>
             <Border />
             <PhotoList />
+            <PhotoApprove />
         </Outer>
     )
 }

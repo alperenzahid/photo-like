@@ -9,6 +9,7 @@ const ImgSmall = styled.img`
   width: 100px;
   border-radius: 0.5rem;
   margin-right: 0.5rem;
+  flex-shrink: 0;
 `
 const ApprovedListBox = styled.div`
   margin-left: 2rem;
