@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import HeaderText from "../HeaderText";
+import PhotoList from "../list-photos/photoList";
+import Border from "../view/Border";
 
 const Outer = styled.div`
   color: ${({theme}) => theme.colors.primary};
@@ -12,6 +14,8 @@ export default function Main(){
     return (
         <Outer>
             <HeaderText text={"Image Approval Application"}/>
+            <Border />
+            <PhotoList />
         </Outer>
     )
 }
